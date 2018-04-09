@@ -159,40 +159,46 @@ header {
     flex-direction: column;
     justify-content: space-around;
     align-items: center; }
-    .hero .hero-content .hero-text {
+    .hero .hero-content .hero-description {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      width: 100%;
+      padding: 0 5%;
       margin-top: 3.5rem;
-      margin-bottom: .8em; }
-      .hero .hero-content .hero-text h2 {
+      margin-bottom: .8em;
+      text-align: right; }
+      .hero .hero-content .hero-description h2 {
         width: 100%;
-        margin: 0 auto;
         font-size: 1.2rem;
         line-height: .7; }
-        .hero .hero-content .hero-text h2 sup {
+        .hero .hero-content .hero-description h2 sup {
           width: 100%;
           display: block;
           font-size: .9rem; }
-    .hero .hero-content .platypus-image {
-      width: 50%;
-      margin: 0 auto;
-      left: 25%;
-      max-width: 200px;
-      margin-bottom: 5%;
-      visibility: hidden; }
-    .hero .hero-content button {
-      background-color: RGBA(500, 89, 58, 1);
-      width: 175px;
-      border-color: transparent;
-      height: 49px;
-      border-radius: 26px; }
-      .hero .hero-content button:focus {
-        outline: none; }
-      .hero .hero-content button a {
+      .hero .hero-content .hero-description .platypus-image {
+        display: block;
+        width: 50%;
+        margin-top: 20px;
+        max-width: 200px;
+        margin-bottom: 5%;
+        visibility: hidden; }
+      .hero .hero-content .hero-description a.series-button {
+        display: inline-block;
+        text-align: center;
+        background-color: RGBA(500, 89, 58, 1);
+        min-width: 175px;
+        border-color: transparent;
+        border-radius: 26px;
+        padding: 10px 20px;
         color: white;
         font-size: 1rem;
         text-transform: uppercase;
         letter-spacing: 1.8px;
         margin-bottom: 30%;
         text-decoration: none; }
+        .hero .hero-content .hero-description a.series-button:focus {
+          outline: none; }
 
 .board-slider-wrap {
   width: 100%;
@@ -483,10 +489,6 @@ footer {
 @media screen and (min-width: 768px) {
   .hero {
     height: 600px; }
-    .hero .hero-content .platypus-image {
-      width: 55%;
-      max-width: 240px;
-      margin-bottom: 1.4rem; }
   .board-slider-wrap .board-slider-head img {
     max-width: 380px; }
   .board-slider-wrap .board-slider-head h1 {
@@ -578,12 +580,6 @@ footer {
     background-size: cover;
     background-repeat: no-repeat;
     transition: all 0.3s ease; }
-    .hero .hero-content .platypus-image {
-      width: 21%;
-      margin-right: 357px;
-      margin-bottom: 10%;
-      margin-top: 9%;
-      transition: all 0.3s ease; }
     .hero .hero-content .hero-text {
       margin: 0;
       width: 37%;
