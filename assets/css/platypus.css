@@ -2,11 +2,20 @@ body {
   color: white;
   background-color: black; }
 
-.platypus {
+.hero-platypus {
   background-image: url(../../assets/img/platypus-nav-bg.png);
   background-size: cover;
   width: 100%;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  height: 200px; }
+
+.cut-out {
+  position: absolute;
+  width: 100%;
+  background-image: url(../../assets/img/cut-out.png);
+  background-size: cover;
+  padding-bottom: 10%;
+  bottom: 0; }
 
 #playtpus-cart {
   margin-right: -23.3rem;
@@ -21,12 +30,6 @@ body {
 .desktop-only-playtpus {
   margin-top: 0;
   padding-top: 5rem; }
-
-.cut-out {
-  width: 100%;
-  background-image: url(../../assets/img/cut-out.png);
-  background-size: cover;
-  padding-bottom: 10%; }
 
 .pinstripe-wrap {
   padding-top: 10%;
